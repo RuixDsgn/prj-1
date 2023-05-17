@@ -32,6 +32,22 @@ const fetchFirst = () => {
 // <!--Light/Dark Mode-->
 // <!--As a [a user] i want [toggle between light and dark]-->
 
+const toggleSwitch = document.querySelector('#mode-toggle');
+
+function toggleTheme() {
+  if (document.body.classList.contains('dark')) {
+    document.body.classList.remove('dark');
+    document.body.classList.add('light');
+  } else {
+    document.body.classList.remove('light');
+    document.body.classList.add('dark');
+  }
+}
+
+toggleSwitch.addEventListener('change', toggleTheme);
+
+
+
 // <!--Stretch Deliverables-->
 // <!--include a carousel of the []-->
 // <!--As a [a user] i want -->

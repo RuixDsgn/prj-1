@@ -11,13 +11,17 @@
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
         <script defer src="src/index.js"></script>
     </head>
-    <body>
+    <body class="light">
         <div>
             <div id="title-header">
                 <h1>Title Goes Here</h1>
             </div>
             <div id="theme">
-                <!-- Light/Dark Theme Button Goes Here -->
+            </div class="toggle-container"></div>
+            <label class="switch">
+                <input type="checkbox" id="mode-toggle">
+                <span class="slider"></span>
+            </label>
             </div>
             <div id="search-bar">
                 <input type="text" placeholder="search for a character here" id="character-search">
@@ -35,4 +39,3 @@
 
 </html>
 
-<!--As a [a user] i want [click on a characters image] to [return the characters info and data below]-->
