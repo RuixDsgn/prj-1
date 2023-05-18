@@ -7,6 +7,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">        <title>Marvel API SPA</title>
         <title>Marvel API SPA</title>
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
         <script defer src="src/index.js"></script>
@@ -14,18 +17,24 @@
     <body class="light">
         <div>
             <div id="title-header">
-                <h1>Title Goes Here</h1>
+                <h1>MARVEL CHARACTER BAR</h1>
+                <div id="character-img-bar">
+                    <ul id = "character-bar"></ul>
+                    <div id="new-character">
+                        <!-- IMG goes here -->
+                        <!-- Info goes here -->
+                    </div>
+                </div>
             </div>
+            <div id="theme">
+                <!-- Light/Dark Theme Button Goes Here -->
+            <div>
             <div id="theme">
             </div class="toggle-container"></div>
             <label class="switch">
                 <input type="checkbox" id="mode-toggle">
                 <span class="slider"></span>
             </label>
-            </div>
-            <div id="search-bar">
-                <input type="text" placeholder="search for a character here" id="character-search">
-                <button>search</button>
             </div>
             <div id="character-img-bar">
                 <!-- Images from API goes here -->
@@ -35,7 +44,20 @@
             <!-- Info goes here -->
 
         <div>
+            </div>
+            <div id="character-add-form">
+                <form id="add-characters">
+                    <label for="character-name">Character Name</form><label>
+                        <input id="character-name" type="text" placeholder="enter character name here"><br><br>
+                    <label for="character-img">Image</label>
+                        <input type="text" id="char-img" placeholder="enter image link here"><br><br>
+                    <label for="character-powers">Superpower</label>
+                        <input type="text" id="char-power" placeholder="what kind of superpower does this hero have?"><br><br>
+                        <input id="btn" type="submit">
+                </form>
+            </div>
     </body>
 
 </html>
 
+<!--As a [a user] i want [click on a characters image] to [return the characters info and data below]-->
